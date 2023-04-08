@@ -9,5 +9,9 @@ public class MainController {
 	public String main() {
 		return "mainpage" ; 
 	}
+	@RequestMapping("/profile")
+	public String mainprofile() {
+		return "test mvc controller" ; 
+	}
 	
 }
