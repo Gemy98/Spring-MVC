@@ -9,6 +9,6 @@
 <body>
 <h1>Hi Jimmy</h1>
 
-<a href="signin">Login</a>
+<a href="process/signin">Login</a>
 </body>
 </html>

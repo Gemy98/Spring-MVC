@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+// default mapping 
+
 public class MainController {
 	@RequestMapping("/")
 	public String main() {
@@ -17,11 +19,11 @@ public class MainController {
 		return "myprofile" ; 
 	}
 	
-	@RequestMapping("/signin")
+	/*@RequestMapping("/signin")
 	public String myLogin() {
 		return "login" ; 
 	}
-	
+	*/
 	@RequestMapping("/loginprocess")
 	public String formProcess(HttpServletRequest request , Model model) {
 		String username = request.getParameter("user") ; 
