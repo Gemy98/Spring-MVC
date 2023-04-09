@@ -11,7 +11,19 @@ public class MainController {
 	}
 	@RequestMapping("/profile")
 	public String mainprofile() {
-		return "test mvc controller" ; 
+		return "myprofile" ; 
 	}
+	
+	@RequestMapping("/signin")
+	public String myLogin() {
+		return "login" ; 
+	}
+	
+	@RequestMapping("/loginprocess")
+	public String formProcess() {
+		return "loginprocess" ; 
+	}
+	
+	
 	
 }
