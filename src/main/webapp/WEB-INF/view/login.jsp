@@ -9,7 +9,7 @@
 <body>
 <h1>welcome to login page</h1>
 
-<form action="loginprocess">
+<form action="loginprocess" method="post">
 
 <input type="text" placeholder="username" name="user">
 <input type="password" placeholder="Password" name="pass">

@@ -9,8 +9,8 @@
 <body>
 <h1>Hi</h1>
 
-<h3>your name is :  ${param.user} </h3>
-<h3>your password is : ${param.pass}</h3>
+<h3>your name is :  ${username} </h3>
+<h3>your password is : ${password}</h3>
 
 
 </body>
