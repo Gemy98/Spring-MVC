@@ -1,5 +1,7 @@
 package com.spring.model;
 
+import java.util.HashMap;
+
 public class Student {
 
 	private String fname ; 
@@ -9,6 +11,28 @@ public class Student {
 	private String age ;
 	
 	private String country ; 
+
+	
+	private HashMap<String,String> countrylist ;
+	
+	public Student() {
+		countrylist = new HashMap<>() ;
+		countrylist.put("Egypt","EG");
+		countrylist.put("France","FR");
+		countrylist.put("Germany","GER");
+		countrylist.put("UnitedStates","US");
+		countrylist.put("UnitedArabEmirates","UAE");
+		
+	}
+	
+	
+	public HashMap<String, String> getCountrylist() {
+		return countrylist;
+	}
+
+	public void setCountrylist(HashMap<String, String> countrylist) {
+		this.countrylist = countrylist;
+	}
 
 	public String getCountry() {
 		return country;

@@ -19,11 +19,9 @@
 	Age :		<f:input path="age"/>
 	Country :
 			 	<f:select path="country">
-					<f:option value="Egypt" label="Eg"/>
-					<f:option value="USA" label="US"/>
-					<f:option value="Germany" label="GER"/>
+					<f:options items="${student.countrylist}"/>
 				</f:select>
-	
+				
 		<input type="submit" value="Done">
 	
 </f:form>

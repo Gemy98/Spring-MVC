@@ -17,8 +17,5 @@
 <p>Age : ${student.age}</p>
 <p>Age : ${student.country}</p>
 
-
-
-
 </body>
 </html>
