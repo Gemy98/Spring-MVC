@@ -14,10 +14,17 @@
 
 <f:form modelAttribute="student" action="processmvctags">
 
-	<f:input path="fname"/>
-	<f:input path="lname"/>
-	<f:input path="age"/>
-	<input type="submit" value="Done">
+    FirstName : <f:input path="fname"/>
+    LastName  :	<f:input path="lname"/>
+	Age :		<f:input path="age"/>
+	Country :
+			 	<f:select path="country">
+					<f:option value="Egypt" label="Eg"/>
+					<f:option value="USA" label="US"/>
+					<f:option value="Germany" label="GER"/>
+				</f:select>
+	
+		<input type="submit" value="Done">
 	
 </f:form>
 

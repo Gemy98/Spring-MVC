@@ -26,8 +26,4 @@ public class StudentControllerMvcTags {
 		return "student-front-mvc-tags/showdatastudent";
 	}
 
-	
-	
-	
-
 }
