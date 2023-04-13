@@ -22,6 +22,13 @@
 					<f:options items="${student.countrylist}"/>
 				</f:select>
 				
+				<br>
+				<f:radiobutton path="language" value="Java"/>java
+				<f:radiobutton path="language" value="C++"/>C++
+				<f:radiobutton path="language" value="Python"/>Python
+				<f:radiobutton path="language" value="Kotlin"/>Kotlin
+				<f:radiobutton path="language" value="Dart"/>Dart
+				
 		<input type="submit" value="Done">
 	
 </f:form>

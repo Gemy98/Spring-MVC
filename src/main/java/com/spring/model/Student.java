@@ -11,9 +11,30 @@ public class Student {
 	private String age ;
 	
 	private String country ; 
+	public String getLanguage() {
+		return language;
+	}
+
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+
+	public HashMap<String, String> getLanguagelist() {
+		return languagelist;
+	}
+
+
+	public void setLanguagelist(HashMap<String, String> languagelist) {
+		this.languagelist = languagelist;
+	}
+
+	private String language ; 
 
 	
 	private HashMap<String,String> countrylist ;
+	private HashMap<String,String> languagelist ;
 	
 	public Student() {
 		countrylist = new HashMap<>() ;
@@ -22,6 +43,14 @@ public class Student {
 		countrylist.put("Germany","GER");
 		countrylist.put("UnitedStates","US");
 		countrylist.put("UnitedArabEmirates","UAE");
+		
+		languagelist = new HashMap<>();
+		languagelist.put("Java","Java");
+		languagelist.put("C++","C++");
+		languagelist.put("Python","Python");
+		languagelist.put("Kotlin","Kotlin");
+		languagelist.put("Dart","Dart");
+		
 		
 	}
 	
