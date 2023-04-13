@@ -2,8 +2,15 @@ package com.spring.model;
 
 import java.util.HashMap;
 
-public class Student {
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
+
+public class Student {
+	
+	
+	@NotNull(message = "required")
+	@Size(min = 1 ,message ="required")
 	private String fname ; 
 	
 	private String lname ; 

@@ -16,8 +16,15 @@
 <f:form modelAttribute="student" action="processmvctags">
 
     FirstName : <f:input path="fname"/>
+    <f:errors path="fname"/>
+    <br>
+    
     LastName  :	<f:input path="lname"/>
+    
+    <br>
+	
 	Age :		<f:input path="age"/>
+	<br>
 	Country :
 			 	<f:select path="country">
 					<f:options items="${student.countrylist}"/>
@@ -42,7 +49,7 @@
 				
 				</p>
 				
-				
+		<br>		
 				
 		<input type="submit" value="Done">
 	
