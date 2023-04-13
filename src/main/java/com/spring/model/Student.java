@@ -11,6 +11,20 @@ public class Student {
 	private String age ;
 	
 	private String country ; 
+	
+	
+	private String[] player ; 
+	
+	public String[] getPlayer() {
+		return player;
+	}
+
+
+	public void setPlayer(String[] player) {
+		this.player = player;
+	}
+
+
 	public String getLanguage() {
 		return language;
 	}
