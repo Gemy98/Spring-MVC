@@ -35,6 +35,13 @@
 	Age :		<f:input path="age"/>
 			    <f:errors path="age" cssClass="error" />
 	
+	
+  <br>
+	
+	Email :		<f:input path="email"/>
+			    <f:errors path="email" cssClass="error" />
+		
+	
 	<br>
 	Country :
 			 	<f:select path="country">

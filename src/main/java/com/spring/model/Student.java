@@ -5,6 +5,7 @@ import java.util.HashMap;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Student {
@@ -22,9 +23,22 @@ public class Student {
 	@Max( value = 50 ,message="the age must be lower or equals 50")
 	private String age ;
 	
-	private String country ; 
+	private String country ;
 	
+	@NotNull(message = "Required Field")
+	@Pattern(regexp ="^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+			,message = "inavalid Email")
+	private String email ;
 	
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	private String[] player ; 
 	
 	public String[] getPlayer() {

@@ -17,7 +17,8 @@
 <p>FirstName : ${student.fname}</p>
 <p>LasttName : ${student.lname}</p>
 <p>Age : ${student.age}</p>
-<p>Age : ${student.country}</p>
+<p>Email : ${student.email}</p>
+<p>country : ${student.country}</p>
 <p>ProgrammingLanguage : ${student.language}</p>
 <p>
 <c:forEach var="pl" items="${student.player }">
