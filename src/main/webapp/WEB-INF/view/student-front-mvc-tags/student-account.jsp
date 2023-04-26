@@ -9,14 +9,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+.error{
+	color: red ; 
+	font-weight: bold ; 
+
+}
+</style>
+
 </head>
+
 <body>
 
 
 <f:form modelAttribute="student" action="processmvctags">
 
     FirstName : <f:input path="fname"/>
-    <f:errors path="fname"/>
+    <f:errors path="fname" cssClass="error" />
     <br>
     
     LastName  :	<f:input path="lname"/>
@@ -24,6 +33,8 @@
     <br>
 	
 	Age :		<f:input path="age"/>
+			    <f:errors path="age" cssClass="error" />
+	
 	<br>
 	Country :
 			 	<f:select path="country">

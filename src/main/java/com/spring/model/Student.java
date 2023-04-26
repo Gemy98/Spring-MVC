@@ -2,6 +2,8 @@ package com.spring.model;
 
 import java.util.HashMap;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -15,6 +17,9 @@ public class Student {
 	
 	private String lname ; 
 
+	@NotNull(message = "Required Field")
+	@Min( value = 20 ,message="the age must be higher or equals 20")
+	@Max( value = 50 ,message="the age must be lower or equals 50")
 	private String age ;
 	
 	private String country ; 
