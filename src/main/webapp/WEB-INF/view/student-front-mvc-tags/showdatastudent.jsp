@@ -17,6 +17,7 @@
 <p>FirstName : ${student.fname}</p>
 <p>LasttName : ${student.lname}</p>
 <p>Age : ${student.age}</p>
+<p>Code : ${student.code}</p>
 <p>Email : ${student.email}</p>
 <p>country : ${student.country}</p>
 <p>ProgrammingLanguage : ${student.language}</p>

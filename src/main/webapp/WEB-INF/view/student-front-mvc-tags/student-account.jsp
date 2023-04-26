@@ -37,6 +37,12 @@
 	
 	
   <br>
+  
+  Code :		<f:input path="code"/>
+			    <f:errors path="code" cssClass="error" />
+	
+	
+  <br>
 	
 	Email :		<f:input path="email"/>
 			    <f:errors path="email" cssClass="error" />
