@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.spring.validation.VertyCode;
+
 public class Student {
 	
 	
@@ -29,7 +31,20 @@ public class Student {
 	@Pattern(regexp ="^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
 			,message = "inavalid Email")
 	private String email ;
+	@NotNull(message ="Required")
+	@VertyCode
+	private String indexCountry ; 
 	
+	
+	public String getIndexCountry() {
+		return indexCountry;
+	}
+
+
+	public void setIndexCountry(String indexCountry) {
+		this.indexCountry = indexCountry;
+	}
+
 	@NotNull(message = "Required")
 	private Integer code ; 
 	

@@ -29,12 +29,13 @@ public class StudentControllerMvcTags {
 	public String processtodata(@Valid @ModelAttribute("student") Student student
 			,BindingResult bindingResult
 			) {
+		System.out.println(bindingResult);
 		if(bindingResult.hasErrors()) {
 			
 			return "student-front-mvc-tags/student-account";
 
 		}
-		else {
+		else {	
 		return "student-front-mvc-tags/showdatastudent";
 		}
 	}
